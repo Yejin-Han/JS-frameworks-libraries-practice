@@ -37,7 +37,9 @@ const items = ref([]);
 
 const fetch = async () => {
   try {
-    const res = await axios.get('/JS-frameworks-libraries-practice/results-summary-component-main/build/data/data.json');
+    const baseUrl = import.meta.env.BASE_URL;
+    console.log(baseUrl);
+    const res = await axios.get(`${baseUrl}/assets/data/data.json`);
     items.value = res.data;
   } catch(err) {
     console.error('Error fetching data: ', err);
