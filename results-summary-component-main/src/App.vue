@@ -37,7 +37,7 @@ const items = ref([]);
 
 const fetch = async () => {
   try {
-    const res = await axios.get('/src/assets/data/data.json');
+    const res = await axios.get('/JS-frameworks-libraries-practice/results-summary-component-main/build/data/data.json');
     items.value = res.data;
   } catch(err) {
     console.error('Error fetching data: ', err);
@@ -55,6 +55,9 @@ html {
 }
 html, body, #app, main {
   height: 100%;
+}
+body {
+  min-width: 375px;
 }
 @include breakpoint("md") {
   #app {
