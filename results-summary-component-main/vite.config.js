@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base: '/JS-frameworks-libraries-practice/results-summary-component-main/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
