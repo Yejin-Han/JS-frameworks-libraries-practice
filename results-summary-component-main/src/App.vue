@@ -31,16 +31,14 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import axios from 'axios';
+import data from '@/assets/data/data.json';
 
 const items = ref([]);
 
-const fetch = async () => {
+const fetch = () => {
   try {
-    const baseUrl = import.meta.env.BASE_URL;
-    console.log(baseUrl);
-    const res = await axios.get(`${baseUrl}assets/data/data.json`);
-    items.value = res.data;
+    items.value = data;
+    console.log(items.value);
   } catch(err) {
     console.error('Error fetching data: ', err);
   }
