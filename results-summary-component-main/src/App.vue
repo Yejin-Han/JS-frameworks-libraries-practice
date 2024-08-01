@@ -39,7 +39,10 @@ const fetch = async () => {
   try {
     const baseUrl = import.meta.env.BASE_URL;
     const res = await axios.get(`${baseUrl}assets/data/data.json`);
-    items.value = res.data;
+    items.value = res.data.map(item => ({
+      ...item,
+      icon: `${baseUrl}${item.icon}`
+    }));
   } catch(err) {
     console.error('Error fetching data: ', err);
   }
