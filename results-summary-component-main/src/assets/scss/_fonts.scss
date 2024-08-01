@@ -1,0 +1,27 @@
+/*
+*   FONTS
+*/
+
+@font-face {
+	font-family: "HankenGrotesk";
+    font-weight: 500;
+    font-style: normal;
+	src: url("../fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "HankenGrotesk";
+    font-weight: 700;
+    font-style: normal;
+	src: url("../fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "HankenGrotesk";
+    font-weight: 900;
+    font-style: normal;
+	src: url("../fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+}
+body {
+    font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #000;
+}
