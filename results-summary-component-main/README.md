@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Yejin-Han/JS-frameworks-libraries-practice/results-summary-component-main](https://github.com/Yejin-Han/JS-frameworks-libraries-practice/results-summary-component-main)
-- Live Site URL: [https://yejin-han.github.io/JS-frameworks-libraries-practice/results-summary-component-main](https://yejin-han.github.io/JS-frameworks-libraries-practice/results-summary-component-main)
+- Solution URL: [https://github.com/Yejin-Han/JS-frameworks-libraries-practice/results-summary-component-main/build](https://github.com/Yejin-Han/JS-frameworks-libraries-practice/results-summary-component-main/build)
+- Live Site URL: [https://yejin-han.github.io/JS-frameworks-libraries-practice/results-summary-component-main/build/](https://yejin-han.github.io/JS-frameworks-libraries-practice/results-summary-component-main/build/)
 
 ## My process
 
