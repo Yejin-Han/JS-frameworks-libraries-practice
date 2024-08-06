@@ -56,7 +56,7 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
     &__icon {
         display: inline-block;
         width: 2.8125rem; height: 2.8125rem;
-        background: url("assets/images/icon-order-confirmed.svg") no-repeat center center / contain;
+        background: url("/assets/images/icon-order-confirmed.svg") no-repeat center center / contain;
         margin-bottom: 1rem;
     }
 
@@ -139,10 +139,6 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
 
         &__title {
             font-size: 2.25rem;
-        }
-
-        &__cart {
-            
         }
     }
 }

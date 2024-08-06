@@ -108,7 +108,7 @@ watch(showModal, (newVal) => {
         &__icon {
             display: block;
             width: 1.375rem; height: 1.375rem;
-            background: url("assets/images/icon-carbon-neutral.svg") no-repeat center center / contain;
+            background: url("/assets/images/icon-carbon-neutral.svg") no-repeat center center / contain;
             margin-right: 0.35rem;
         }
 
