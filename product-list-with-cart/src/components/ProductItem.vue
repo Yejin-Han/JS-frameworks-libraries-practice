@@ -154,7 +154,7 @@ const decreaseQuantity = () => {
             &__icon {
                 display: inline-block;
                 width: 1.5rem; height: 1.375rem;
-                background: url("images/icon-add-to-cart.svg") no-repeat center center / contain;
+                background: url("./images/icon-add-to-cart.svg") no-repeat center center / contain;
                 margin-right: 0.625rem;
             }
 
