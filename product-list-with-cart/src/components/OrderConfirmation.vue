@@ -48,6 +48,7 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
         left: 50%; bottom: 0;
         transform: translateX(-50%);
         width: 100%;
+        max-height: 85vh;
         background-color: #fff;
         border-radius: 0.625rem 0.625rem 0 0;
         padding: 1.5rem; padding-top: 2.625rem;
@@ -74,25 +75,33 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
     &__cart {
         background-color: #fcf8f5;
         margin-top: 2rem;
-        padding: 1.5rem;
+        padding: 1.5rem; padding-right: 0.5rem;
         border-radius: 0.625rem;
 
         .cart {
+            &__list {
+                height: 23.4rem;
+                overflow-y: scroll;
+            }
+
             &__item {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 padding-bottom: 1rem;
+                margin-right: 0.75rem;
             }
 
             &__thumb {
+                flex-shrink: 0;
                 width: 3.125rem; height: 3.125rem;
                 border-radius: 0.375rem;
                 margin-right: 0.625rem;
             }
 
             &__content {
-                width: calc(100% - 8rem);
+                flex: 1;
+                position: relative;
             }
 
             &__subtitle {
@@ -128,9 +137,9 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
     }
 
     @include breakpoint("md") {
-        
         &__content {
             max-width: 36.875rem;
+            max-height: none;
             bottom: 50%;
             transform: translate(-50%, 50%);
             border-radius: 0.625rem;
