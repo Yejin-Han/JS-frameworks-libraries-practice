@@ -45,7 +45,7 @@ const store = createStore({
     actions: {
         async fetchProducts({ commit }) {
             try {
-                const res = await axios.get('/assets/data/data.json');
+                const res = await axios.get('assets/data/data.json');
                 const products = res.data.map((product, idx) => ({
                     ...product,
                     id: idx + 1
