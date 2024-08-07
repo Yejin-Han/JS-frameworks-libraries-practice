@@ -48,10 +48,13 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
         left: 50%; bottom: 0;
         transform: translateX(-50%);
         width: 100%;
-        max-height: 85vh;
+        max-height: 85vh; min-height: 30rem;
         background-color: #fff;
         border-radius: 0.625rem 0.625rem 0 0;
         padding: 1.5rem; padding-top: 2.625rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
 
     &__icon {
@@ -59,29 +62,35 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
         width: 2.8125rem; height: 2.8125rem;
         background: url("/assets/images/icon-order-confirmed.svg") no-repeat center center / contain;
         margin-bottom: 1rem;
+        flex-shrink: 0;
     }
 
     &__title {
         font-weight: 700;
         font-size: 2.5rem;
+        flex-shrink: 0;
     }
 
     &__text {
         font-size: 1rem;
         color: $rose--500;
         margin-top: 0.5rem;
+        flex-shrink: 0;
     }
 
     &__cart {
+        flex: 1;
         background-color: #fcf8f5;
         margin-top: 2rem;
         padding: 1.5rem; padding-right: 0.5rem;
         border-radius: 0.625rem;
+        overflow: hidden;
 
         .cart {
             &__list {
-                height: 23.4rem;
-                overflow-y: scroll;
+                max-height: calc(85vh - 30rem);
+                min-height: 4.1875rem;
+                overflow-y: auto;
             }
 
             &__item {
@@ -128,12 +137,14 @@ const formattedTotal = computed(() => formatPrice(cartTotal.value));
 
             &__order {
                 margin-bottom: 0;
+                margin-right: 1rem;
             }
         }
     }
 
     &__btn {
         margin-top: 2rem;
+        flex-shrink: 0;
     }
 
     @include breakpoint("md") {
