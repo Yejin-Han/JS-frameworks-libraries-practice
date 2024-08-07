@@ -136,9 +136,5 @@ watch(showModal, (newVal) => {
             background-color: #952c0c;
         }
     }
-
-    @include breakpoint("dt") {
-        width: 35rem;
-    }
 }
 </style>
