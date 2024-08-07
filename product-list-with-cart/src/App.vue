@@ -1,7 +1,9 @@
 <template>
     <main>
-        <ProductList />
-        <Cart />
+        <div class="inner">
+            <ProductList />
+            <Cart />
+        </div>
     </main>
 </template>
 
@@ -36,9 +38,14 @@ main {
 
 @include breakpoint("md") {
     main {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        .inner {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1220px;
+            padding: 6rem 0 5.5rem;
+        }
     }
 }
 </style>
