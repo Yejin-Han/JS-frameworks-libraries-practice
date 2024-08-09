@@ -80,6 +80,11 @@ watch(amount, (newVal) => {
     formattedAmount.value = formatNumber(newVal);
 });
 
+watch(type, (newVal) => {
+    isRepaymentChecked.value = newVal === 'repayment';
+    isInterestOnlyChecked.value = newVal === 'interest-only';
+});
+
 const onAmountInput = (e) => {
     let rawVal = e.target.value;
     rawVal = rawVal.replace(/[^\d]/g, '');
