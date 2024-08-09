@@ -321,6 +321,8 @@ const clearAll = () => {
             }
 
             &--submit{
+                width: auto;
+                padding: 1rem 2.5rem;
                 transition: all 0.4s;
 
                 &:hover {
