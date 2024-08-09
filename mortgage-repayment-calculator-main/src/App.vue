@@ -40,12 +40,12 @@ body {
 }
 main {
   background-color: $white;
-  border-radius: 1.5rem;
   max-width: 1010px;
   overflow: hidden;
 
   @include breakpoint('md') {
     display: flex;
+    border-radius: 1.5rem;
   }
 }
 </style>
