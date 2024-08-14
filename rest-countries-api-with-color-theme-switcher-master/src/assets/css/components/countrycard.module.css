@@ -1,0 +1,35 @@
+.countryFlag {
+  width: 100%;
+}
+
+.countryInfo {
+  background-color: var(--el-color);
+  padding: 1.5rem 1.5rem 2rem;
+}
+
+.countryName {
+  font-size: 1.125rem;
+  font-weight: var(--w-bold);
+  margin-bottom: 1rem;
+}
+
+.countryDetail {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.countryDetail strong {
+  font-weight: var(--w-semi-bold);
+}
+
+
+@media screen and (min-width: 481px) {
+  .imgWrap {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .countryFlag {
+    height: 100%;
+  }
+}

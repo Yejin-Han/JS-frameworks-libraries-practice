@@ -1,0 +1,71 @@
+@import "initialize.css";
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+
+:root {
+  --bg-color: hsl(0, 0%, 98%);
+  --el-color: hsl(0, 0%, 100%);
+  --txt-color: hsl(200, 15%, 8%);
+  /* --input-color: hsl(0, 0%, 52%); */
+  --input-color: hsl(0, 0%, 69%);
+
+  --w-regular: 300;
+  --w-semi-bold: 600;
+  --w-bold: 800;
+
+  --xs: 376;
+  --sm: 481;
+  --md: 769;
+  --xl: 1025;
+  --xxl: 1281;
+}
+
+/* * {
+  transition-property: background-color, color;
+  transition-duration: 0.5s, 0.1s;
+} */
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  color: var(--txt-color);
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  font-weight: var(--w-regular);
+  min-width: 320px; height: 100%;
+}
+
+body.dark-mode {
+  --bg-color: hsl(207, 26%, 17%);
+  --el-color: hsl(209, 23%, 22%);
+  --txt-color: hsl(0, 0%, 100%);
+  --input-color: hsl(0, 0%, 100%);
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  background-color: var(--bg-color);
+  padding-top: 5rem;
+  min-height: 100%;
+}
+
+.inner {
+  padding: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 481px) {
+  .inner {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
