@@ -13,7 +13,9 @@ const router = createBrowserRouter([
       { path: "/country/:name", element: <DetailPage /> }
     ]
   }
-])
+], {
+  basename: "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master"
+});
 
 const App = () => {
   return <RouterProvider router={router} />;
