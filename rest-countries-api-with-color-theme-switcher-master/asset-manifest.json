@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master/static/css/main.5cc8f52c.css",
-    "main.js": "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master/static/js/main.3ee273b5.js",
+    "main.js": "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master/static/js/main.c109dc50.js",
     "index.html": "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master/index.html",
     "main.5cc8f52c.css.map": "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master/static/css/main.5cc8f52c.css.map",
-    "main.3ee273b5.js.map": "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master/static/js/main.3ee273b5.js.map"
+    "main.c109dc50.js.map": "/JS-frameworks-libraries-practice/rest-countries-api-with-color-theme-switcher-master/static/js/main.c109dc50.js.map"
   },
   "entrypoints": [
     "static/css/main.5cc8f52c.css",
-    "static/js/main.3ee273b5.js"
+    "static/js/main.c109dc50.js"
   ]
 }
