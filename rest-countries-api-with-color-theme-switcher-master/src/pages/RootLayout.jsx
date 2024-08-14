@@ -9,7 +9,7 @@ const RootLayout = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('${process.env.PUBLIC_URL}/data/data.json');
+      const res = await axios.get(`${process.env.PUBLIC_URL}/data/data.json`);
       setCountries(res.data);
     };
 
