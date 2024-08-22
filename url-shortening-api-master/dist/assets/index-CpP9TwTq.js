@@ -212,7 +212,7 @@ Error generating stack: `+i.message+`
   }
 `,X0=R.div`
   text-align: center;
-  display: flex;
+  display: flex;,
   flex-direction: column;
   align-items: center;
   padding-bottom: 2.5rem;
@@ -235,6 +235,13 @@ Error generating stack: `+i.message+`
   }
 `,q0=R.a`
   ${Ip}
+  transition: color 0.4s;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--c-very-dark-blue);
+    }
+  }
 `,J0=R(ro)`
   ${Ip}
 
@@ -678,7 +685,7 @@ Error generating stack: `+i.message+`
   @media screen and (min-width: 769px) {
     &:not(:last-child) {
       margin-bottom: 0;
-      margin-right: 4rem;
+      margin-right: min(5vw, 4rem);
     }
   }
 `,Kl=R.strong`
@@ -706,11 +713,12 @@ Error generating stack: `+i.message+`
 `,nt=R.a`
 
 `,Bv=R.ul`
+  flex-shrink: 0;
   margin-top: 2.125rem;
 
   @media screen and (min-width: 769px) {
     margin-top: 0;
-    margin-left: 5.5rem;
+    margin-left: min(8vw, 5.5rem);
   }
 `,No=R.li`
   display: inline-block;

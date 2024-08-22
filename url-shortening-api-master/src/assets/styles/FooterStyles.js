@@ -61,7 +61,7 @@ export const NavItem = styled.li`
   @media screen and (min-width: 769px) {
     &:not(:last-child) {
       margin-bottom: 0;
-      margin-right: 4rem;
+      margin-right: min(5vw, 4rem);
     }
   }
 `;
@@ -99,11 +99,12 @@ export const NavLink = styled.a`
 `;
 
 export const SnsList = styled.ul`
+  flex-shrink: 0;
   margin-top: 2.125rem;
 
   @media screen and (min-width: 769px) {
     margin-top: 0;
-    margin-left: 5.5rem;
+    margin-left: min(8vw, 5.5rem);
   }
 `;
 

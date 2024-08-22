@@ -145,7 +145,7 @@ export const NavLink = styled.a`
 
 export const Auth = styled.div`
   text-align: center;
-  display: flex;
+  display: flex;,
   flex-direction: column;
   align-items: center;
   padding-bottom: 2.5rem;
@@ -172,6 +172,13 @@ const headerButtonStyles = css`
 
 export const Login = styled.a`
   ${headerButtonStyles}
+  transition: color 0.4s;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--c-very-dark-blue);
+    }
+  }
 `;
 
 export const SignUp = styled(Button)`
