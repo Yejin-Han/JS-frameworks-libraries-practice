@@ -7,7 +7,7 @@ const UrlShortener = ({ addLink, links }) => {
   const [url, setUrl] = useState('');
   const [error, setError] = useState(false);
 
-  const apiUrl = import.meta.env.VITE_API_URL;
+  /* const apiUrl = import.meta.env.VITE_API_URL; */
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const UrlShortener = ({ addLink, links }) => {
     }
 
     try {
-      const res = await axios.post(`${apiUrl}/api/v1/shorten`, { url: url }); // data 속성에 url이라는 key에 url값을 담은 객체를 전달
+      const res = await axios.post('https://cleanuri.com/api/v1/shorten', { url: url }); // data 속성에 url이라는 key에 url값을 담은 객체를 전달
       addLink({ original: url, short: res.data.result_url });
       setUrl('');
       setError(false);
