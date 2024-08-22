@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
+  /* server: {
     proxy: {
       '/api': {
         target: 'https://cleanuri.com',
@@ -13,7 +13,7 @@ export default defineConfig({
         ws: true,
       },
     },
-  },
+  }, */
   base: '/JS-frameworks-libraries-practice/url-shortening-api-master/dist/'
 })
 
