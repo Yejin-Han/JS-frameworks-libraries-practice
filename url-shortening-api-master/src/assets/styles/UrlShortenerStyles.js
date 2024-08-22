@@ -46,7 +46,10 @@ export const Form = styled.form`
 `;
 
 export const FormBg = styled.div`
-  background: url(${bgShortenMobile}) no-repeat right top / 70% auto;
+  background-image: url(${({ $bg }) => $bg});
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 70% auto;
   mix-blend-mode: screen;
   opacity: 0.3;
   width: 100%; height: 100%;
@@ -55,7 +58,6 @@ export const FormBg = styled.div`
   z-index: 1;
 
   @media screen and (min-width: 769px) {
-    background-image: url(${bgShortenDesktop});
     background-size: 100% 100%;
     display: flex;
   }

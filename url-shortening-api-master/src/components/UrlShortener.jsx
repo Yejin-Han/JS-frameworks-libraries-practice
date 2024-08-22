@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import LinkList from './LinkList';
 import { UrlShortenerContainer, UrlInner, Form, FormBg, InputWrap, UrlInput, ErrorMsg, BtnShorten } from '../assets/styles/UrlShortenerStyles';
 
+import bgShortenMobile from '../assets/images/bg-shorten-mobile.svg';
+import bgShortenDesktop from '../assets/images/bg-shorten-desktop.svg';
+
 const UrlShortener = ({ addLink, links }) => {
   const [url, setUrl] = useState('');
   const [error, setError] = useState(false);
-
-  /* const apiUrl = import.meta.env.VITE_API_URL; */
+  const [bgUrl, setBgUrl] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,6 +34,20 @@ const UrlShortener = ({ addLink, links }) => {
     setUrl(e.target.value);
   }
 
+  const handleResize = () => {
+    if (window.innerWidth >= 769) {
+      setBgUrl(bgShortenDesktop);
+    } else {
+      setBgUrl(bgShortenMobile);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    handleResize(); // 초기값 설정
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <UrlShortenerContainer>
@@ -42,7 +58,7 @@ const UrlShortener = ({ addLink, links }) => {
               {error && <ErrorMsg>Please add a link</ErrorMsg>}
             </InputWrap>
             <BtnShorten type="submit">Shorten It!</BtnShorten>
-            <FormBg />
+            <FormBg $bg={bgUrl} />
           </Form>
         </UrlInner>
       </UrlShortenerContainer>

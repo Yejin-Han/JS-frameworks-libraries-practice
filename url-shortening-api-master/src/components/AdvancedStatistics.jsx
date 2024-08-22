@@ -10,7 +10,7 @@ const AdvancedStatistics = () => {
       </Text>
       <StatisticsList>
         <StatisticsItem>
-          <DetailImg />
+          <DetailImg background={'../images/'} />
           <DetailTitle>Brand Recognition</DetailTitle>
           <DetailText>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</DetailText>
         </StatisticsItem>
