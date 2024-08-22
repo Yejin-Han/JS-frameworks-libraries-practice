@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.svg'],
   build: {
-    assetsInlineLimit: 20000,
+    assetsInlineLimit: 0,
   },
   /* server: {
     proxy: {
