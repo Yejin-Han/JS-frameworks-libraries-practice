@@ -14,7 +14,7 @@ export default defineConfig({
       },
     },
   }, */
-  base: '/JS-frameworks-libraries-practice/url-shortening-api-master/dist/'
+  /* base: '/JS-frameworks-libraries-practice/url-shortening-api-master/dist/' */
 })
 
 
