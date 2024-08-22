@@ -1,10 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Inner, Button } from './GlobalStyles';
 
-import iconBrandRecognition from '../images/icon-brand-recognition.svg';
-import iconDetailedRecords from '../images/icon-detailed-records.svg';
-import iconFullyCustomizable from '../images/icon-fully-customizable.svg';
-
 export const AdvancedStatisticsContainer = styled(Inner)`
   text-align: center;
   padding-top: 5.75rem;
@@ -101,13 +97,13 @@ export const DetailImg = styled.div`
   transform: translateX(-50%);
 
   ${StatisticsItem}:nth-child(1) & {
-    background-image: url(${iconBrandRecognition});
+    background-image: url(${({ $bgBR }) => $bgBR});
   }
   ${StatisticsItem}:nth-child(2) & {
-    background-image: url(${iconDetailedRecords});
+    background-image: url(${({ $bgDR }) => $bgDR});
   }
   ${StatisticsItem}:nth-child(3) & {
-    background-image: url(${iconFullyCustomizable});
+    background-image: url(${({ $bgFC }) => $bgFC});
   }
 
   @media screen and (min-width: 861px) {

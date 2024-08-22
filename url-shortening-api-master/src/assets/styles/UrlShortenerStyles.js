@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
 import { Inner, Button } from './GlobalStyles';
-import bgShortenMobile from '../images/bg-shorten-mobile.svg';
-import bgShortenDesktop from '../images/bg-shorten-desktop.svg';
 
 export const UrlShortenerContainer = styled.div`
   padding-top: 5.625rem;
